@@ -8,6 +8,8 @@ xhr.onreadystatechange = function () {
   if (this.readyState === 4 && this.status === 200) {
     // console.log(xhr.responseText);
     ipAddressEl.textContent = xhr.responseText;
+  } else {
+    ipAddressEl.innerHTML = `<img src= "https://miamieastsoccer.demosphere-secure.com/_files/RUNNING%20DOWN%20FIELD.gif "`;
   }
 };
 
