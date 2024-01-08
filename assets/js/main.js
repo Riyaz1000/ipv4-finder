@@ -9,7 +9,7 @@ xhr.onreadystatechange = function () {
     // console.log(xhr.responseText);
     ipAddressEl.textContent = xhr.responseText;
   } else {
-    ipAddressEl.innerHTML = `<img src= "https://miamieastsoccer.demosphere-secure.com/_files/RUNNING%20DOWN%20FIELD.gif "`;
+    ipAddressEl.innerHTML = `<i class="fas fa-spinner fa-pulse"></i>`;
   }
 };
 
